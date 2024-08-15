@@ -17,11 +17,9 @@ To write a program to predict the marks scored by a student using the simple lin
 
 ## Program:
 ```
-
 Program to implement the simple linear regression model for predicting the marks scored.
 Developed by: ARCHANA T
 RegisterNumber:  212223240013
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -35,7 +33,6 @@ Y=df.iloc[:,-1].values
 print(Y)
 from sklearn.model_selection import train_test_split
 X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=1/3,random_state=0)
-
 from sklearn.linear_model import LinearRegression
 regressor=LinearRegression()
 regressor.fit(X_train,Y_train)
@@ -61,31 +58,21 @@ print("MAE = ",mae)
 rmse=np.sqrt(mse)
 print("RMSE : ",rmse)
 
-
-
-
-
 ```
-
 
 ## Output:
 
+![image](https://github.com/user-attachments/assets/25590f5a-41a7-4cc3-89fc-4a1a0241719a)   
 
+![image](https://github.com/user-attachments/assets/b817498d-6d77-4662-82a5-62f80198073b)   
 
+![image](https://github.com/user-attachments/assets/b103ef21-a58c-4eed-a7d7-44ba7e374732)    
 
-![image](https://github.com/user-attachments/assets/25590f5a-41a7-4cc3-89fc-4a1a0241719a)
+![image](https://github.com/user-attachments/assets/a2c7b60e-c33b-4598-a3af-136cbaddf483)   
 
-![image](https://github.com/user-attachments/assets/b817498d-6d77-4662-82a5-62f80198073b)
+![image](https://github.com/user-attachments/assets/e97f75b4-9f22-45f1-94f9-865e7489840d)    
 
-![image](https://github.com/user-attachments/assets/b103ef21-a58c-4eed-a7d7-44ba7e374732)
-
-![image](https://github.com/user-attachments/assets/a2c7b60e-c33b-4598-a3af-136cbaddf483)
-
-![image](https://github.com/user-attachments/assets/e97f75b4-9f22-45f1-94f9-865e7489840d)
-
-![image](https://github.com/user-attachments/assets/4a26068d-bcc5-4e68-9d40-8194da27d5fb)
-
-
+![image](https://github.com/user-attachments/assets/4a26068d-bcc5-4e68-9d40-8194da27d5fb)    
 
 
 
